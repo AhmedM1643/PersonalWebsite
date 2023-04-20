@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --NormalSize: 1rem;
+    --MediumSize: 2rem;
+    --LargeSize: 3rem;
+    --DefaultLine: 40px;
+    --Blue: #337ea8;
+    --Grey: rgb(100, 100, 100);
+    --Dark: hsl(224, 25%, 12%);
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:0;
+    padding: 20px 200px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0.25px 3px 4px rgba(146, 161, 176, 0.15);
+    z-index: 100;
+  
+}
+
+.HeadContainer {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Icon {
+    width: 64px;
+    border-radius: 60%;
+}
+
+.title {
+    color: #000000;
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+.MenuButton {
+    display: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: var(--NormalSize);
+    padding: 0px 16px;
+    color: black;
+    font-weight: 800;
+}
+
+/* Main Section */
+
+.Main {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 200px 0px 50px 0px;
+    font-size: var(--MediumSize);
+    font-weight: 100;
+    line-height: 60px;
+    color: var(--Dark);
+}
+
+
+.View {
+    background-color: var(--Blue);
+    color: white;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 24px 0px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    border-style: solid;
+    border-color: var(--Blue);
+    outline: none;
+
+}
+
+.Accounts {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+
+.Accounts i {
+    padding: 0px 12px;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--Dark);
+}
+
+.MainImg {
+    width: 250px;
+    margin-left: 150px;
+    border-radius: 32%;
+}
+
+/* About Secton */
+
+.About {
+    font-size: var(--NormalSize);
+    padding: 0px 240px;
+    line-height: var(--DefaultLine);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: var(--Blue);
+    border-bottom: 2px solid var(--Blue);
+    border-width: 4px;
+    padding-bottom: 16px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.AboutMe {
+    width: 600px;
+}
+
+.M40 {
+    margin: 40px auto;
+}
+
+.Skills {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.Skill {
+    width: 600px;
+    height:12px;
+    background-color: var(--Blue);
+    margin: 20px 0px;
+    border-radius: 20px;
+}
+
+.Exp {
+    background-color: rgb(170, 170, 170);
+    width: 600px;
+    height: 12px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.Skill-Title {
+    width: 600px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.Skill-Title span {
+    text-align: end;
+}
+
+.Services {
+    margin-bottom: 100px;
+    font-size: 18px;
+
+}
+
+.GridLayout {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+
+}
+
+.Service {
+    width: 220px;
+    height: 270px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-radius: 20px;
+    padding-bottom: 100px;
+}
+
+.Default {
+    width: 172px;
+    padding: 10px;
+    position:relative;
+    left:24px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.ServiceTitle {
+    margin: 4px 0px;
+}
+
+.Projects {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    gap:24px;
+    margin-bottom: 100px;
+}
+
+.Project {
+    width: 640px;
+    height: 200px;
+    border-radius: 20px;
+    border-style: solid;
+    padding-bottom: 100px;
+    border-width: 3px;
+    display:grid; 
+    grid-template-columns: 200px 320px;
+    background-size: 1100px;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.Project:hover {
+    background-size: 1000px;
+}
+
+.Info {
+    padding-top: 50px;
+    padding-left: 12px;
+}
+
+.Project-Title {
+    font-size: 24px;
+    padding-bottom: 12px;
+}
+
+.Project-Image {
+    width: 172px;
+    padding: 10px;
+    position:relative;
+    left:24px;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.ContactForm {
+    width: 640px;
+    height: 550px;
+    border-style: solid;
+    border-color: var(--Blue);
+    border-radius: 32px;
+    border-width: 3px;
+    padding: 50px;
+}
+
+input {
+    width: 500px;
+    padding: 10px;
+    margin:12px 0px;
+    border-radius: 20px;
+    outline:none;
+}
+
+.submit {
+    background-color: var(--Blue);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+textarea {
+    width: 500px;
+    height: 140px;
+    padding: 10px;
+    margin:12px 0px;
+    border-radius: 20px;
+    outline: none;
+}
+
+footer {
+    width: 100%;
+    height: 180px;
+    background-color:hsl(224, 25%, 12%);
+    color: rgb(255, 255, 255);
+    font-size: var(--MediumSize);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    font-size: 24px;
+}
+
+.Accounts2 {
+    margin: auto;
+    padding: 28px
+}
+
+.Accounts2 i {
+    padding: 0px 12px;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+@media (max-width:1024px) {
+
+    header {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title {
+        padding-right: 0px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .MenuButton {
+        display: flex;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+
+}
+
+@media (max-width: 641px) {
+    header {
+        width: 100%;
+    }
+    .HeadContainer {
+        width: 100%;
+    }
+    .Main {
+        grid-template-columns: auto;
+        margin: 150px 0px 0px 0px
+    }
+
+    .Container {
+        margin-left: 50px;
+    }
+
+    .MainImg {
+        position: relative;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .AboutMe {
+        width: 100%;
+    }
+
+    .Exp {
+        max-width: 280px;
+    }
+
+    .Skill-Title {
+        max-width: 280px;
+        font-size: 12px;
+    }
+
+
+    .GridLayout {
+        width: 100%;
+        grid-template-columns: auto;
+    }
+
+
+
+    .Projects {
+        width: 100%;
+    }
+
+    .Project {
+        width: 320px;
+        grid-template-columns: 100px 320px;
+        align-items: flex-start;
+    }
+
+    .Project-Title {
+        font-size: 20px;
+    }
+
+    .Project-Description {
+        font-size: 13px;
+        padding-right: 140px;
+    }
+
+    .Project-Image {
+        width: 120px;
+        position:static;
+        left:1px;
+        align-self: center;
+        border-radius: 50%;
+        padding: 10px;
+        padding-top: 50%;
+    }
+
+    .Contact {
+        margin-left: 5%;
+    }
+
+    .ContactForm {
+        width: 90%;
+        padding: 20px;
+        height: 400px;
+
+    }
+
+    input {
+        width: 240px;
+        height: 32px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
