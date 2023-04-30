@@ -1,8 +1,9 @@
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", "sans-serif";
-    font-weight: 700;
+    font-weight: 600;
 }
 
 html {
@@ -64,7 +65,6 @@ nav a {
     font-size: var(--NormalSize);
     padding: 0px 16px;
     color: black;
-    font-weight: 800;
 }
 
 /* Main Section */
@@ -116,11 +116,10 @@ nav a {
     border-radius: 32%;
 }
 
-/* About Secton */
+/* About Section */
 
 .About {
     font-size: var(--NormalSize);
-    padding: 0px 240px;
     line-height: var(--DefaultLine);
     display: flex;
     justify-content: center;
@@ -141,6 +140,7 @@ nav a {
 
 .AboutMe {
     width: 600px;
+    text-align: center;
 }
 
 .M40 {
@@ -234,15 +234,11 @@ nav a {
     padding-bottom: 100px;
     border-width: 3px;
     display:grid; 
-    grid-template-columns: 200px 320px;
+    grid-template-columns: 200px 420px;
     background-size: 1100px;
     transition-duration: 2s;
     transition-property: all;
     transition-duration: 0.5s;
-}
-
-.Project:hover {
-    background-size: 1000px;
 }
 
 .Info {
@@ -305,8 +301,8 @@ textarea {
 }
 
 footer {
-    width: 100%;
-    height: 180px;
+    max-width: 100%;
+    height: 190px;
     background-color:hsl(224, 25%, 12%);
     color: rgb(255, 255, 255);
     font-size: var(--MediumSize);
@@ -315,6 +311,7 @@ footer {
     align-items: center;
     padding: 40px 0px;
     font-size: 24px;
+    margin: 0;
 }
 
 .Accounts2 {
@@ -334,10 +331,9 @@ footer {
 @media (max-width:1024px) {
 
     header {
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
+        padding: 10px 20px;
     }
+
 
     .title {
         padding-right: 0px;
@@ -357,10 +353,15 @@ footer {
 }
 
 @media (max-width: 641px) {
+    :root {
+        font-size: 14px;
+    }
+
     header {
-        width: 100%;
+        max-width: 100%;
     }
     .HeadContainer {
+        width: 100%;
         width: 100%;
     }
     .Main {
@@ -379,7 +380,9 @@ footer {
     }
 
     .AboutMe {
-        width: 100%;
+        width: 90%;
+        text-align: center;
+        margin-left: 20px;
     }
 
     .Exp {
@@ -397,15 +400,9 @@ footer {
         grid-template-columns: auto;
     }
 
-
-
-    .Projects {
-        width: 100%;
-    }
-
     .Project {
         width: 320px;
-        grid-template-columns: 100px 320px;
+        grid-template-columns: 100px 200px;
         align-items: flex-start;
     }
 
@@ -415,7 +412,6 @@ footer {
 
     .Project-Description {
         font-size: 13px;
-        padding-right: 140px;
     }
 
     .Project-Image {
@@ -428,28 +424,36 @@ footer {
         padding-top: 50%;
     }
 
-    .Contact {
-        margin-left: 5%;
-    }
-
     .ContactForm {
-        width: 90%;
+        width: 80%;
         padding: 20px;
-        height: 400px;
+        height: 430px;
+        margin-left: 10%;
 
     }
 
     input {
         width: 240px;
         height: 32px;
+        border-style: solid;
     }
 
     textarea {
-        width: 300px;
+        width: 240px;
+        margin-bottom: 0px;
     }
 
+    .submit {
+        font-size: 12px;
+        height: auto;
+    }
+
+
     footer {
-        width: 100%;
+
+        max-width: 100%;
+        height: 200px;
+        margin-top: 20px;
     }
 
 }
