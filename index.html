@@ -10,7 +10,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://kit.fontawesome.com/4c9e6599a2.js" crossorigin="anonymous"></script>
-    <link rel="styleesheet" href="Icons/css/all.css">
+    <link rel="styleesheet" href="Icons/css/all.min.css">
+    <link rel="icon" type="icon/x-image" href="Images/AboHemid2.png">
     <link rel="stylesheet" href="Style.css">
     <script src="Script.js" defer></script>
     <title>Ahmed</title>
@@ -22,7 +23,7 @@
 
             <div style="display:flex;align-items:center">
                 <img class="Icon" src="Images/AboHemid.png">
-                <p class="title">Ahmed</p>
+                <p class="title" style="padding-left:20px;">Ahmed</p>
             </div>
             <nav>
                 <a href="index.html">Home</a>
@@ -37,7 +38,7 @@
     </header>
 
 
-    <section class="Main">
+    <section class="Main" id="Main">
         <div class="Container">
             <p class="text">Hello, There!</p>
             <p class="text" >I'am <span style="color:var(--Blue)">Ahmed</span></p>
@@ -114,18 +115,20 @@
         </div>
     </section>
 
-    <section class="Projects reveal" id="Projects">
+    <section class="Projects" id="Projects">
         <p class="section-title" >My Projects</p>
-        <div class="Project" >
-            <img src="Images/TaskLogo.jpg" class="Project-Image" style="display:inline-block">
-            <div class="Info">
-                <p class="Project-Title">Task List</p>
-                <p class="Project-Description">It's a task list. Its job is to make you organize your tasks easily.</p>
+
+            <div class="Project" >
+                <a href="#"><img src="Images/TaskLogo.jpg" class="Project-Image" style="display:inline-block"></a>
+                <div class="Info">
+                    <p class="Project-Title">Task List</p>
+                    <p class="Project-Description">It's a task list. Its job is to make you organize your tasks easily.</p>
+                </div>
             </div>
-        </div>
+
 
         <div class="Project" >
-            <img src="Images/YouTubeLogo.jpg" class="Project-Image" >
+            <a href="#"><img src="Images/YouTubeLogo.jpg" class="Project-Image" ></a>
             <div class="Info">
                 <p class="Project-Title">YouTube Clone</p>
                 <p class="Project-Description">It's a Clone of YouTube made in HTML, CSS and JS and it is not dynamic.</p>
@@ -133,7 +136,7 @@
         </div>
 
         <div class="Project" >
-            <img src="Images/TwitterLogo.jpg" class="Project-Image" >
+            <a href="#"><img src="Images/TwitterLogo.jpg" class="Project-Image" ></a>
             <div class="Info">
                 <p class="Project-Title">Twitter Clone</p>
                 <p class="Project-Description">It's a Clone of Twitter made in HTML, CSS and JS and it is not dynamic.</p>
@@ -142,7 +145,7 @@
 
     </section>
 
-    <section class="Contact reveal">
+    <section class="Contact">
         <div>
             <p class="section-title M40">Contact Me</p>
             <form class="ContactForm">
